@@ -1,3 +1,7 @@
+"""
+---> Author : Gautham J.S
+@gothWare
+"""
 import numpy as np
 import string
 import random
@@ -121,19 +125,9 @@ class Population:
         if self.fittest > 5:
             self.finishState=True
 
-"""
-pop = Population([3,3],[2.6677579249167724, 3.1269795948658894],0.1,10)
-pop.populationInit()
-pop.fitnessChk()
-pop.selectionProc()
-pop.sexytime()
-pop.finishCheck()
 
-print(pop.fittestPopElement)
-print(pop.fittest)
-"""
-def mainfun():
-    
+if __name__ == "__main__":
+
     target = [50,50]
     start = [0,0]
     popMax = 20
@@ -176,5 +170,4 @@ def mainfun():
     plt.grid()
     plt.show()
     
-mainfun()
 
